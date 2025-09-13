@@ -1,14 +1,12 @@
-FROM tomcat:9.0
+FROM tomcat:9.0-jdk17
 
-# Remove default webapps
-RUN rm -rf /usr/local/tomcat/webapps/*
+# Remove default ROOT webapp
+RUN rm -rf /usr/local/tomcat/webapps/ROOT
 
-# Copy WAR file
-COPY target/real-estate-website.war /usr/local/tomcat/webapps/ROOT.war
+# Copy the WAR from Maven target folder into Tomcat as ROOT.war
+COPY target/real-estate-website-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 
-# Expose port
 EXPOSE 8080
 
-# Start Tomcat
 CMD ["catalina.sh", "run"]
 
