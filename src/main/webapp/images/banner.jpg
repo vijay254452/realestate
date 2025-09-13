@@ -1,0 +1,6 @@
+--2025-09-13 17:04:16--  https://sdmntprwestus2.oaiusercontent.com/files/00000000-3e74-61f8-a2b4-16e0cd27b00a/raw?se=2025-09-13T18%3A02%3A55Z
+Resolving sdmntprwestus2.oaiusercontent.com (sdmntprwestus2.oaiusercontent.com)... 172.64.144.52, 104.18.43.204, 2606:4700:4406::6812:2bcc, ...
+Connecting to sdmntprwestus2.oaiusercontent.com (sdmntprwestus2.oaiusercontent.com)|172.64.144.52|:443... connected.
+HTTP request sent, awaiting response... 404 The specified resource does not exist.
+2025-09-13 17:04:17 ERROR 404: The specified resource does not exist..
+
