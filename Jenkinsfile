@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials') // Jenkins credentials ID
-        DOCKER_IMAGE = "vijay254452/realestate"
+        DOCKER_IMAGE = "vijay3247/realestate"
         BRANCH = "main"
         WAR_NAME = "real-estate-website-1.0-SNAPSHOT.war"
     }
