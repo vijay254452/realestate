@@ -45,7 +45,7 @@ pipeline {
             steps {
                 script {
                     sh "docker rm -f realestate || true"
-                    sh "docker run -d --name realestate -p 8080:8080 ${DOCKER_IMAGE}:${BUILD_NUMBER}"
+                    sh "docker run -d --name realestate -p 6777:8080 ${DOCKER_IMAGE}:${BUILD_NUMBER}"
                 }
             }
         }
